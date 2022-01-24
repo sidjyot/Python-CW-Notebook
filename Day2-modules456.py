@@ -7,18 +7,18 @@ for i in range(1, 10, 2):
   print(i)
 
 
-from turtle import *
+name = input("Please enter your name: ")
 
-forward(100)
-
-pensize(3)
-pencolor('cyan')
+for i in name:
+  print(i)
 
 
-forward(20)
-left(90)
-forward(100)
-right(90)
-forward(20)
-right(90)
-forward(100)
+if ('Sid' in name):
+  print('Hi Sidharth')
+else:
+  print('Hey Stranger')
+
+brother = name.replace('nav','shek')
+print(f'Hello {brother}')
+
+#Test Change
