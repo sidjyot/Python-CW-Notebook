@@ -19,12 +19,9 @@ def draw_circle():
 def draw_star():
   pendown()
   pencolor('#FFFFFF')
-  fillcolor('#FFFFFF')
-  begin_fill()
   for i in range(5):
     forward(10)
     right(144)
-  end_fill()
   penup()
   
 

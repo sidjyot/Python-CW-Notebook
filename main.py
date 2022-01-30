@@ -1,74 +1,22 @@
-from turtle import *
+# c = input("Please enter a character: ")
+# o = ord(c)
 
-def draw_rectangle():
-  pendown()
-  pensize(1)
-  pencolor('black')
-  for i in range(2):
-    forward(200)
-    right(90)
-    forward(75)
-    right(90)
-  penup()
+# print(f'The Unicode number of the character {c} is {o}')
 
-def draw_circle():
-  pendown()
-  circle(25)
-  penup()
+# i = int(input("Please enter a Unicode number: "))
+# c = chr(i)
 
-def draw_star():
-  pendown()
-  pencolor('#FFFFFF')
-  fillcolor('#FFFFFF')
-  begin_fill()
-  for i in range(5):
-    forward(10)
-    right(144)
-  end_fill()
-  penup()
-  
+# print(f'The printable character of the unicode {i} is {c}')
 
-penup()
-goto(-200,100)
-fillcolor('#FF0000')
-begin_fill()
-draw_rectangle()
-end_fill()
+#Create a function that takes two arguments and returns thier product as a result
 
-right(90)
-forward(75)
-left(90)
-draw_rectangle()
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
 
-penup()
-pencolor('#FFFFFF')
-left(90)
-forward(12)
-right(90)
-forward(50)
-fillcolor('#FFFFFF')
-begin_fill()
-draw_circle()
-end_fill()
+def product(first, second):
+  c = first * second
+  return c
 
-penup()
-forward(10)
-pencolor('#FF0000')
-fillcolor('#FF0000')
-begin_fill()
-draw_circle()
-end_fill()
-
-penup()
-forward(18)
-left(90)
-forward(40)
-right(90)
-for star in range(5):
-  draw_star()
-  right(72)
-  forward(18)
-
-hideturtle()
-
+d = product(a, b)
+print(d)
 
