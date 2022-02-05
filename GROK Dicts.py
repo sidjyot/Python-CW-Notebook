@@ -46,4 +46,19 @@ for k, v in car_colors.items():
   print(f'Cars that are {k}: {v}')
   
 #--------------------------------------------
+word_counter = {}
+
+line = input('Enter line: ')
+while line:
+  words = line.split()
+  for i in words:
+    if i in word_counter:
+      word_counter[i] += 1
+    else:
+      word_counter[i] = 1
+  line = input('Enter line: ')
   
+for k, v in sorted(word_counter.items()):
+  print(f'{k} {v}')
+  
+#--------------------------------------------
