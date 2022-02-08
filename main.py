@@ -1,49 +1,18 @@
-#--------------------------------------------
+import json
 
-phonebook = {}
+with open('input.json') as input_json:
+  json_data = json.load(input_json)
 
-line = input('Name and number: ')
-while line:
-  # parts = line.split()
-  # name = parts[0]
-  # number = parts[1]
-  name, number = line.split()
+#print(type(json_data))
 
-  phonebook[name] = int(number)
-  line = input('Name and number: ')
+def myprint(input_str):
+  print(json.dumps(input_str, indent = 4))
 
-print(phonebook)
+all_results = json_data['results']
+#print(type(all_results))
+#myprint(json_data)
 
-#--------------------------------------------
+# Sample access to one element 
+first_result = all_results[1]
+myprint(first_result)
 
-name_colour = {}
-
-line = input('Name and colour: ')
-while line:
-  name, colour = line.split()
-  name_colour[name] = str(colour)
-  line = input('Name and colour: ')
-  
-#for i in name_colour:  
-#  print(i, name_colour[i])
-
-for k, v in name_colour.items():
-  print (k, v)
-  
-
-#--------------------------------------------
-car_colors = {}
-
-input_color = input('Car: ')
-while input_color:
-  if input_color in car_colors:
-    car_colors[input_color] += 1
-  else:
-    car_colors[input_color] = 1
-  input_color = input('Car: ')
-  
-for k, v in car_colors.items():
-  print(f'Cars that are {k}: {v}')
-  
-#--------------------------------------------
-  
