@@ -18,3 +18,5 @@ c2 = Coordinate(8,9)
 print(round(c2.distance(c1)))
 #Accessing via class directly
 print(round(Coordinate.distance(c1, c2)))
+
+

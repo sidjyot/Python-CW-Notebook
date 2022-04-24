@@ -12,6 +12,10 @@ PyPDF4 = "^1.27.0"
 tweepy = "^4.6.0"
 pandas = "^1.4.1"
 beautifulsoup4 = "^4.10.0"
+phonenumbers = "^8.12.46"
+timezonefinder = "^5.2.0"
+geopy = "^2.2.0"
+pytz = "^2022.1"
 
 [tool.poetry.dev-dependencies]
 
