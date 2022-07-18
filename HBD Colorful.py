@@ -104,6 +104,6 @@ turtle.color("pink")
 turtle.pendown()
 
 # ENTER YOUR NAME IN THE NAME PLACE
-turtle.write(arg=f"Happy Birthday Abhinav Sir!", align="left", font=("jokerman", 24, "normal"))
+turtle.write(arg=f"Happy Birthday Name!", align="left", font=("jokerman", 24, "normal"))
 
 time.sleep(5)
